@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Club Registration Form</h1>
+    <p id="description">SCRFC Member Registration</p>
+    <form action="/form-url" method="post" id="survey-form">
+        <label for="name" id="name-label">Name</label><br>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required><br>
+        <label for="email" id="email-lable">Email</label><br>
+        <input id="email" name="email" type="email" placeholder="Enter your email address" required><br>
+        <label for="number" id="number-label">Age (optional)</label><br>
+        <input id="number" name="number" type="number" placeholder="Age" min="18" max="80"><br>
+        <label for="dropdown">Are you registering as a player or supporter</label>
+        <select id="dropdown" name="dropdown" >
+            <option value="Player">Player</option>
+            <option value="Supporter">Player</option>
+        </select>
+        <fieldset id="volunteering">
+            <legend>Would you be willing to volunteer?</legend>
+            <input type="radio" id="yes" name="volunteer" value="yes" checked>
+            <label for="volunteer">Definitely</label><br>
+            <input type="radio" id="maybe" name="volunteer" value="maybe">
+            <label for="volunteer">Maybe</label><br>
+            <input type="radio" id="notsure" name="volunteer" value="notsure">
+            <label for="volunteer">Not Sure</label>
+        </fieldset>
+        <fieldset id="reasons">
+            <legend>Why are you interested in joining SCRFC?</legend>
+            <input type="checkbox" name="play" id="play" value="play">
+            <label for="play">Play competitive rugby</label><br>
+            <input type="checkbox" name="social" id="social" value="social">
+            <label for="play">Play social rugby</label><br>
+            <input type="checkbox" name="support" id="support" value="support">
+            <label for="play">Support</label><br>
+            <input type="checkbox" name="minis" id="minis" value="minis">
+            <label for="play">My child plays</label>
+        </fieldset>
+        <label for="comments">Any comments or suggestsions?</label>
+        <textarea name="comments" id="comments" rows="5" cols="33"></textarea><br>
+        <button id="submit">Submit</button>
+    </form>
+</body>
+</html>
