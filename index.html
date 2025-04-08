@@ -1,49 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Document</title>
-</head>
-<body>
-    <h1 id="title">Club Registration Form</h1>
-    <p id="description">SCRFC Member Registration</p>
-    <form action="/form-url" method="post" id="survey-form">
-        <label for="name" id="name-label">Name</label><br>
-        <input id="name" name="name" type="text" placeholder="Enter your name" required><br>
-        <label for="email" id="email-lable">Email</label><br>
-        <input id="email" name="email" type="email" placeholder="Enter your email address" required><br>
-        <label for="number" id="number-label">Age (optional)</label><br>
-        <input id="number" name="number" type="number" placeholder="Age" min="18" max="80"><br>
-        <label for="dropdown">Are you registering as a player or supporter</label>
-        <select id="dropdown" name="dropdown" >
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Club Registration Form</h1>
+        <p id="description">SCRFC Member Registration</p>
+      </header>
+      <form action="/form-url" method="post" id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input
+            id="name"
+            class="form-input"
+            name="name"
+            type="text"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-lable">Email</label>
+          <input
+            id="email"
+            class="form-input"
+            name="email"
+            type="email"
+            placeholder="Enter your email address"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label">Age (optional)</label>
+          <input
+            id="number"
+            class="form-input"
+            name="number"
+            type="number"
+            placeholder="Age"
+            min="16"
+            max="99"
+          />
+        </div>
+        <div class="form-group">
+          <label for="dropdown"
+            >Are you registering as a player or supporter</label
+          >
+          <select id="dropdown" class="form-input" name="dropdown">
             <option value="Player">Player</option>
-            <option value="Supporter">Player</option>
-        </select>
-        <fieldset id="volunteering">
+            <option value="Supporter">Supporter</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <fieldset id="volunteering">
             <legend>Would you be willing to volunteer?</legend>
-            <input type="radio" id="yes" name="volunteer" value="yes" checked>
-            <label for="volunteer">Definitely</label><br>
-            <input type="radio" id="maybe" name="volunteer" value="maybe">
-            <label for="volunteer">Maybe</label><br>
-            <input type="radio" id="notsure" name="volunteer" value="notsure">
-            <label for="volunteer">Not Sure</label>
-        </fieldset>
-        <fieldset id="reasons">
-            <legend>Why are you interested in joining SCRFC?</legend>
-            <input type="checkbox" name="play" id="play" value="play">
-            <label for="play">Play competitive rugby</label><br>
-            <input type="checkbox" name="social" id="social" value="social">
-            <label for="play">Play social rugby</label><br>
-            <input type="checkbox" name="support" id="support" value="support">
-            <label for="play">Support</label><br>
-            <input type="checkbox" name="minis" id="minis" value="minis">
-            <label for="play">My child plays</label>
-        </fieldset>
-        <label for="comments">Any comments or suggestsions?</label>
-        <textarea name="comments" id="comments" rows="5" cols="33"></textarea><br>
-        <button id="submit">Submit</button>
-    </form>
-</body>
+            <label for="volunteer">
+              <input
+                type="radio"
+                id="yes"
+                class="radio-btn"
+                name="volunteer"
+                value="yes"
+                checked
+              />Definitely
+            </label>
+            <label for="volunteer">
+              <input
+                type="radio"
+                id="maybe"
+                class="radio-btn"
+                name="volunteer"
+                value="maybe"
+              />Maybe
+            </label>
+            <label for="volunteer">
+              <input
+                type="radio"
+                id="notsure"
+                class="radio-btn"
+                name="volunteer"
+                value="notsure"
+              />Not Sure
+            </label>
+          </fieldset>
+        </div>
+        <div class="form-group">
+          <fieldset id="reasons">
+            <legend>
+              Why are you interested in joining SCRFC? (Check all that apply)
+            </legend>
+            <label for="play">
+              <input
+                type="checkbox"
+                name="play"
+                id="play"
+                class="check-box"
+                value="play"
+              />
+              Play competitive rugby</label
+            >
+            <label for="play">
+              <input
+                type="checkbox"
+                name="social"
+                id="social"
+                class="check-box"
+                value="social"
+              />
+              Play social rugby</label
+            >
+            <label for="play">
+              <input
+                type="checkbox"
+                name="support"
+                id="support"
+                class="check-box"
+                value="support"
+              />
+              Support</label
+            >
+            <label for="play">
+              <input
+                type="checkbox"
+                name="minis"
+                id="minis"
+                class="check-box"
+                value="minis"
+              />
+              My child plays</label
+            >
+          </fieldset>
+        </div>
+        <div class="form-group">
+          <label for="comments">Any comments or suggestions?</label>
+          <textarea
+            name="comments"
+            id="comments"
+            class="input-txt"
+            rows="5"
+            cols="33"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button id="submit" class="submit-btn" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <footer>
+        Photo by <a href="https://unsplash.com/@jhc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">James Coleman</a> on <a href="https://unsplash.com/photos/grayscale-photo-of-nfl-player-catching-ball-CTEvFbFpVC8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Unsplash</a>
+    </footer>
+  </body>
 </html>
