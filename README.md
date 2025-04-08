@@ -19,6 +19,6 @@ background-size: cover;
 
 Initially struggled around the styling not so much the form functionality. But discovered, that actually styling forms is relatively simple.
 
-I especially liked making all the input boxes the same width, which was done by adding a class to all the <input> elements as well as the <textarea> and <button> elements. This made the form look more uniformed.
+I especially liked making all the input boxes the same width, which was done by adding a class to all the ```<input>``` elements as well as the ```<textarea>``` and ```<button>``` elements. This made the form look more uniformed.
 
 Also centreing the form by applying ```margin: 0 auto;``` to the entire form resulted in a good look.
