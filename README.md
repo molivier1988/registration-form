@@ -14,6 +14,7 @@ I had trouble with the background-image where it would disappear when applying b
 background: url() no-repeat;
 background-size: cover;
 ```
+***IMPORTANT*** Organising form elements into separate ```<div>``` helped with styling and code readability.
 
 ## Reflection
 
