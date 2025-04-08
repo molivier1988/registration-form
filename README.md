@@ -16,6 +16,10 @@ background-size: cover;
 ```
 ***IMPORTANT*** Organising form elements into separate ```<div>``` helped with styling and code readability.
 
+## Form Action vs Method
+```form action:``` = url where form data is sent.
+``` method:``` defines ***how*** data is sent typically ***POST*** | ***GET***
+
 ## Reflection
 
 Initially struggled around the styling not so much the form functionality. But discovered, that actually styling forms is relatively simple.
